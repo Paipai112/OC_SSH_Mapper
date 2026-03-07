@@ -1,0 +1,9 @@
+{
+    "ssh_host": "122.51.4.170",
+    "ssh_port": 22,
+    "ssh_user": "root",
+    "local_port": 18789,
+    "remote_port": 18789,
+    "remember_password": true,
+    "encrypted_password": "MTk5NzAyMDhTcCE="
+}

@@ -3,7 +3,20 @@
     "allow": [
       "Bash(git init:*)",
       "Bash(git remote:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(dir C:\\\\Users\\\\Paip\\\\AppData\\\\Roaming\\\\claude\\\\plugins\\\\user:*)",
+      "Bash(pip install:*)",
+      "Bash(mkdir:*)",
+      "Bash(pip list:*)",
+      "Bash(python:*)",
+      "Bash(taskkill:*)",
+      "Bash(pip:*)",
+      "Bash(vulture:*)",
+      "Bash(pip-check:*)",
+      "Bash(start python:*)",
+      "Bash(timeout:*)",
+      "Bash(pyinstaller:*)",
+      "Bash(start:*)"
     ]
   }
 }

@@ -1,0 +1,26 @@
+{
+    "version": "2.0",
+    "presets": [
+        {
+            "name": "OpenClaw",
+            "ssh_host": "122.51.4.170",
+            "ssh_port": 22,
+            "ssh_user": "root",
+            "local_port": 18789,
+            "remote_host": "127.0.0.1",
+            "remote_port": 18789,
+            "auth_type": "password",
+            "encrypted_password": "gAAAAABpq_PFBZfFJY4LzbKbnw4HPAC-GsvTnUexwW58wJ6PHDYrtFyfxIXLsLVHnLs2FRZ-3UpsdsSRNhCdcbGhgzSQl6fb7w==",
+            "key_file_path": "",
+            "remember_password": true
+        }
+    ],
+    "settings": {
+        "auto_start": false,
+        "dark_mode": true,
+        "auto_reconnect": true,
+        "reconnect_interval": 5,
+        "max_reconnect_attempts": 10
+    },
+    "current_preset": "OpenClaw"
+}
