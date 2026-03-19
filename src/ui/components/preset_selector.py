@@ -87,7 +87,7 @@ class PresetSelector(ttk.Frame):
         if config and self._on_select:
             self._on_select(config)
             self._config_manager.set_current_preset(name)
-            logger.info(f"已选择预设: {name}")
+            logger.info(f"已选择预设：{name}")
 
     def _save_preset(self) -> None:
         """保存当前配置为预设"""
@@ -102,17 +102,18 @@ class PresetSelector(ttk.Frame):
             messagebox.showwarning("警告", "请先选择一个预设")
             return
 
-        if messagebox.askyesno("确认", f"确定要删除预设 '{name}' 吗?"):
+        if messagebox.askyesno("确认", f"确定要删除预设 '{name}' 吗？"):
             self._config_manager.delete_preset(name)
             self._load_presets()
-            logger.info(f"已删除预设: {name}")
+            logger.info(f"已删除预设：{name}")
 
-    def save_current_config(self, config: ConnectionConfig) -> bool:
+    def save_current_config(self, config: ConnectionConfig, force_update: bool = False) -> bool:
         """
         保存配置到预设
 
         Args:
             config: 连接配置
+            force_update: 是否强制更新（不显示确认对话框）
 
         Returns:
             是否保存成功
@@ -120,15 +121,23 @@ class PresetSelector(ttk.Frame):
         # 检查是否已存在
         existing = self._config_manager.get_preset(config.name)
         if existing:
-            if not messagebox.askyesno("确认", f"预设 '{config.name}' 已存在，是否覆盖?"):
-                return False
-            self._config_manager.update_preset(config.name, config)
+            if not force_update:
+                if not messagebox.askyesno("确认", f"预设 '{config.name}' 已存在，是否覆盖？"):
+                    return False
+            # 使用 update_preset 更新现有预设
+            if not self._config_manager.update_preset(config.name, config):
+                # 如果更新失败（预设不存在），则添加新预设
+                self._config_manager.add_preset(config)
         else:
             self._config_manager.add_preset(config)
 
+        # 重新加载预设列表确保与文件同步
         self._load_presets()
+
+        # 设置当前预设并保存到配置文件
+        self._config_manager.set_current_preset(config.name)
         self.preset_var.set(config.name)
-        logger.info(f"已保存预设: {config.name}")
+        logger.info(f"已保存预设：{config.name}")
         return True
 
     def refresh(self) -> None:

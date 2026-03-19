@@ -51,6 +51,7 @@ class MainWindow:
                 max_attempts=self._config_manager.get_setting("max_reconnect_attempts", 10)
             )
         )
+        self._exit_callback = None
 
         self._setup_root()
         self._setup_styles()
@@ -58,6 +59,18 @@ class MainWindow:
         self._setup_callbacks()
         self._setup_tray()
         self._load_last_config()
+
+    def _set_exit_callback(self, callback) -> None:
+        """设置退出回调"""
+        self._exit_callback = callback
+        # 同时将回调传递给系统托盘服务
+        if hasattr(self, '_tray') and self._tray:
+            self._tray.set_exit_callback(self._on_exit_from_tray)
+
+    def _on_exit_from_tray(self) -> None:
+        """从托盘菜单触发的退出"""
+        if self._exit_callback:
+            self._exit_callback()
 
     def _setup_root(self) -> None:
         """配置根窗口"""
@@ -68,8 +81,8 @@ class MainWindow:
         # 应用主题
         self._theme.apply_to_root(self._root)
 
-        # 关闭时隐藏到托盘
-        self._root.protocol("WM_DELETE_WINDOW", self._hide_window)
+        # 关闭时隐藏到托盘（不退出应用）
+        self._root.protocol("WM_DELETE_WINDOW", self._hide_to_tray)
 
         # 居中显示
         self._root.update_idletasks()
@@ -129,6 +142,11 @@ class MainWindow:
         config = self._config_manager.get_current_preset()
         if config:
             self.connection_form.set_config(config)
+            # 同步更新 PresetSelector 的选中状态
+            current_preset_name = self._config_manager.get_current_preset_name()
+            if current_preset_name:
+                self.preset_selector.preset_var.set(current_preset_name)
+            logger.info(f"已加载上次使用的预设：{current_preset_name}")
 
     def _on_preset_selected(self, config: ConnectionConfig) -> None:
         """预设选择回调"""
@@ -184,8 +202,13 @@ class MainWindow:
         else:
             self._tray.set_disconnected()
 
+    def _hide_to_tray(self) -> None:
+        """隐藏窗口到系统托盘"""
+        self._root.withdraw()
+        logger.debug("窗口已隐藏到托盘")
+
     def _hide_window(self) -> None:
-        """隐藏窗口"""
+        """隐藏窗口（同 hide_to_tray，保持兼容）"""
         self._root.withdraw()
 
     def _show_window(self) -> None:
@@ -196,12 +219,22 @@ class MainWindow:
 
     def _exit_app(self) -> None:
         """退出应用"""
+        logger.info("正在退出应用...")
+
+        # 如果有退出回调，先调用回调（由 main.py 处理单实例释放）
+        if self._exit_callback:
+            self._exit_callback()
+            return
+
         # 断开连接
         if self._connection_manager.is_connected:
             self._connection_manager.disconnect()
 
         # 停止托盘
         self._tray.stop()
+
+        # 停止 tkinter 主循环
+        self._root.quit()
 
         # 销毁窗口
         self._root.destroy()

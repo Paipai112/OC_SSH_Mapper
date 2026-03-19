@@ -43,6 +43,10 @@ class SystemTrayService:
         self._tray: Optional[pystray.Icon] = None
         self._running = False
 
+    def set_exit_callback(self, callback: Callable) -> None:
+        """设置退出回调"""
+        self._on_exit = callback
+
     def start(self) -> None:
         """启动托盘服务"""
         if self._running:
@@ -68,8 +72,8 @@ class SystemTrayService:
             menu
         )
 
-        # 在后台线程运行
-        threading.Thread(target=self._tray.run, daemon=True).start()
+        # 在后台线程运行（非守护线程，保持进程运行）
+        threading.Thread(target=self._tray.run, daemon=False).start()
         logger.info("系统托盘已启动")
 
     def stop(self) -> None:

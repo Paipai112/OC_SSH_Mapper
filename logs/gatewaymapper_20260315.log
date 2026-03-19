@@ -1,0 +1,176 @@
+2026-03-15 08:34:22 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 08:34:22 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 08:34:22 | WARNING  | GatewayMapper | 使用特权端口 443，可能需要管理员权限
+2026-03-15 08:35:27 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 08:35:27 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 08:35:27 | WARNING  | GatewayMapper | 使用特权端口 443，可能需要管理员权限
+2026-03-15 08:35:50 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 08:35:50 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 08:35:50 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 08:35:50 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:35:50 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:35:50 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:35:50 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 08:35:50 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:35:50 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:35:50 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 08:35:50 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:35:50 | INFO     | GatewayMapper | 已删除预设: 测试服务器
+2026-03-15 08:35:50 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:35:50 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:35:50 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:35:50 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 08:35:50 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 08:35:50 | WARNING  | GatewayMapper | 使用特权端口 443，可能需要管理员权限
+2026-03-15 08:36:21 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:36:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:36:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:36:21 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:36:21 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:36:21 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:36:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:36:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:21 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:37:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:21 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:37:21 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:37:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:35 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 08:37:35 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 08:37:35 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:37:35 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:37:35 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 08:37:35 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:37:35 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:37:35 | INFO     | GatewayMapper | 已删除预设: 测试服务器
+2026-03-15 08:37:35 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 08:37:35 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:35 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:37:35 | ERROR    | GatewayMapper | 单实例检查出错：[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:35 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 08:37:35 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 08:37:35 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 08:37:35 | WARNING  | GatewayMapper | 使用特权端口 443，可能需要管理员权限
+2026-03-15 16:30:19 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 16:30:19 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 已删除预设: 测试服务器
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:30:19 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:30:19 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:30:19 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 16:30:19 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 16:30:19 | WARNING  | GatewayMapper | 使用特权端口 443，可能需要管理员权限
+2026-03-15 16:32:21 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:32:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:32:21 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:32:21 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:32:21 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:32:53 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:32:53 | WARNING  | GatewayMapper | 检测到已有实例运行
+2026-03-15 16:32:53 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:32:53 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:33:05 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 16:33:05 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 已删除预设: 测试服务器
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 16:33:05 | WARNING  | GatewayMapper | 检测到已有实例运行
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:33:05 | INFO     | GatewayMapper | 单实例检查通过：当前是唯一的实例
+2026-03-15 16:33:05 | WARNING  | GatewayMapper | 检测到已有实例运行
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:33:05 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 16:33:05 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 16:33:05 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 16:33:05 | WARNING  | GatewayMapper | 使用特权端口 443，可能需要管理员权限
+2026-03-15 17:20:12 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 17:20:12 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:09:20 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:09:20 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:10:10 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:10:10 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:10:34 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:10:34 | INFO     | GatewayMapper | 系统托盘已启动
+2026-03-15 18:10:34 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:10:34 | INFO     | GatewayMapper | 已加载上次使用的预设：OpenClaw
+2026-03-15 18:10:34 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 18:11:08 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:11:08 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:11:08 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 18:11:08 | INFO     | GatewayMapper | 已添加预设: TestPreset
+2026-03-15 18:11:08 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 18:11:08 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:12:29 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:49:47 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:50:10 | INFO     | GatewayMapper | 已加载配置文件: D:\GatewayMapper\config.json
+2026-03-15 18:50:10 | INFO     | GatewayMapper | 系统托盘已启动
+2026-03-15 18:50:10 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:50:10 | INFO     | GatewayMapper | 已加载上次使用的预设：OpenClaw
+2026-03-15 18:50:10 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 18:53:58 | INFO     | GatewayMapper | 已从旧版路径迁移配置：D:\GatewayMapper\config.json -> C:\Users\Paip\AppData\Roaming\GatewayMapper\config.json
+2026-03-15 18:54:12 | INFO     | GatewayMapper | 已加载配置文件: C:\Users\Paip\AppData\Roaming\GatewayMapper\config.json
+2026-03-15 18:54:12 | INFO     | GatewayMapper | 系统托盘已启动
+2026-03-15 18:54:12 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:54:12 | INFO     | GatewayMapper | 已加载上次使用的预设：OpenClaw
+2026-03-15 18:54:12 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 已加载现有加密密钥
+2026-03-15 18:54:28 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 18:54:28 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 18:54:28 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 18:54:28 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 18:54:28 | INFO     | GatewayMapper | 已添加预设: 测试服务器
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 18:54:28 | INFO     | GatewayMapper | 已删除预设: 测试服务器
+2026-03-15 18:54:28 | INFO     | GatewayMapper | 使用默认配置
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 配置已保存
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 检测到已有实例运行
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 检测到已有实例运行
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 检测到已有实例运行
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 18:54:28 | DEBUG    | GatewayMapper | 已释放单实例锁
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 使用特权端口 22，可能需要管理员权限
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 使用特权端口 80，可能需要管理员权限
+2026-03-15 18:54:28 | WARNING  | GatewayMapper | 使用特权端口 443，可能需要管理员权限

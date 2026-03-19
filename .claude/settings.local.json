@@ -16,7 +16,17 @@
       "Bash(start python:*)",
       "Bash(timeout:*)",
       "Bash(pyinstaller:*)",
-      "Bash(start:*)"
+      "Bash(start:*)",
+      "Bash(cd:*)",
+      "Bash(dir:*)",
+      "Bash(del:*)",
+      "Bash(powershell -Command \"Get-Process | Where-Object {$_.ProcessName -like '*GatewayMapper*'} | Select-Object ProcessName, Id\")",
+      "Bash(tasklist:*)",
+      "Bash(cmd /c \"del /q \"D:\\\\GatewayMapper\\\\dist\\\\GatewayMapper_old.exe\" 2>nul && echo \"Cleaned up old exe\" || echo \"Could not clean up old exe\"\")",
+      "Bash(node:*)",
+      "Bash(.\\\\build.bat)",
+      "Bash(bash build.bat)",
+      "Bash(cmd /c build.bat)"
     ]
   }
 }

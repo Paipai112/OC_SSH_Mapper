@@ -6,6 +6,7 @@
 
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Optional, List
 
@@ -15,9 +16,81 @@ from src.utils.logger import get_logger
 
 logger = get_logger()
 
+
+def _get_config_dir() -> Path:
+    """
+    获取配置文件目录
+
+    在开发环境下使用项目根目录
+    在打包 EXE 后使用用户数据目录 (APPDATA)
+    """
+    # 检查是否在 PyInstaller 打包环境中运行
+    if getattr(sys, 'frozen', False):
+        # 打包后的 EXE 环境 - 使用 APPDATA
+        if sys.platform == 'win32':
+            appdata = os.getenv('APPDATA')
+            if appdata:
+                config_dir = Path(appdata) / 'GatewayMapper'
+                config_dir.mkdir(parents=True, exist_ok=True)
+                return config_dir
+        # 非 Windows 或 APPDATA 不可用时，使用用户主目录
+        config_dir = Path.home() / '.gatewaymapper'
+        config_dir.mkdir(parents=True, exist_ok=True)
+        return config_dir
+    else:
+        # 开发环境 - 使用项目根目录
+        return Path(__file__).parent.parent.parent
+
+
+def _get_legacy_config_path() -> Path:
+    """
+    获取旧版配置文件路径（项目根目录）
+
+    用于从旧版本迁移配置
+    """
+    if getattr(sys, 'frozen', False):
+        # EXE 环境下，尝试从临时目录的父目录查找
+        # PyInstaller 会解压到 %TEMP%\_MEIxxxxx\
+        import tempfile
+        temp_dir = Path(tempfile.gettempdir())
+        # 旧版本可能将配置保存到了临时目录
+        # 这里返回项目根目录作为备用
+        return Path(__file__).parent.parent.parent / "config.json"
+    else:
+        return Path(__file__).parent.parent.parent / "config.json"
+
+
+def _migrate_config_if_needed(new_config_path: Path) -> None:
+    """
+    如果需要，从旧版路径迁移配置到新路径
+
+    Args:
+        new_config_path: 新的配置文件路径
+    """
+    # 如果新路径已存在，不需要迁移
+    if new_config_path.exists():
+        return
+
+    # 检查旧版配置文件
+    legacy_path = _get_legacy_config_path()
+    if legacy_path.exists() and legacy_path != new_config_path:
+        try:
+            # 复制配置文件
+            import shutil
+            new_config_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(legacy_path, new_config_path)
+            logger.info(f"已从旧版路径迁移配置：{legacy_path} -> {new_config_path}")
+        except Exception as e:
+            logger.error(f"迁移配置文件失败：{e}")
+
+
 # 配置文件路径
-CONFIG_DIR = Path(__file__).parent.parent.parent
+CONFIG_DIR = _get_config_dir()
 CONFIG_FILE = CONFIG_DIR / "config.json"
+
+# 在模块加载时尝试迁移配置（仅在 EXE 环境下）
+if getattr(sys, 'frozen', False):
+    _migrate_config_if_needed(CONFIG_FILE)
 
 
 class ConfigManager:
